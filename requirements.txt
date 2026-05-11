@@ -1,0 +1,12 @@
+transformers
+torch
+langchain
+langchain-community
+langchain-core
+langchain-text-splitters
+faiss-cpu
+sentence-transformers
+gradio
+PyPDF2
+pdfplumber
+accelerate
