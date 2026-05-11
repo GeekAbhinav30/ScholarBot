@@ -94,7 +94,8 @@ Store embeddings in the FAISS vector database
 Retrieve relevant context for user queries
 Generate answers using Open-LLaMA 3B
 
-Notes
+Notes:
+
 Best performance is achieved using GPU-enabled Google Colab runtime.
 Text-based PDFs work better than scanned PDFs.
 Large model files are not uploaded to GitHub due to storage limitations.
