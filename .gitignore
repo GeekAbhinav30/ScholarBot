@@ -1,0 +1,7 @@
+*.bin
+*.pt
+*.pth
+*.gguf
+models/
+drive/
+.ipynb_checkpoints/
