@@ -44,7 +44,7 @@ research-paper-qa-assistant/
 │── requirements.txt
 │── .gitignore
 
-
+```
 Model Loading
 
 The project supports two methods for loading the language model.
@@ -56,6 +56,7 @@ The Open-LLaMA 3B model is stored in Google Drive and loaded directly into Googl
 Example:
 
 model_path = "/content/drive/MyDrive/OpenLLaMA_Models/openllama3b_model"
+
 2. Loading the Model from HuggingFace
 
 The model can also be downloaded directly from HuggingFace.
@@ -79,15 +80,12 @@ Choose either:
 
 Google Drive model loading
 HuggingFace model loading
-
 Step 4: Launch the Application
 
 Run the Gradio interface cell:
 
 demo.launch(share=True, debug=True, show_error=True)
-
-
-PDF Processing Workflow:
+PDF Processing Workflow
 Upload a research paper PDF
 Extract text using PyPDF2 or pdfplumber
 Split text into chunks
@@ -95,3 +93,11 @@ Generate embeddings
 Store embeddings in the FAISS vector database
 Retrieve relevant context for user queries
 Generate answers using Open-LLaMA 3B
+
+Notes
+Best performance is achieved using GPU-enabled Google Colab runtime.
+Text-based PDFs work better than scanned PDFs.
+Large model files are not uploaded to GitHub due to storage limitations.
+
+Author
+Abhinav Upadhyay
